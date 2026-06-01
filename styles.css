@@ -77,7 +77,7 @@ body {
 .carousel-section {
   position: relative;
   margin-top: 0.4rem;
-  width: min(1400px, calc(100vw - 2rem));
+  width: calc(100vw - 1rem);
   margin-left: 50%;
   transform: translateX(-50%);
 }
