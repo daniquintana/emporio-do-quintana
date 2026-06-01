@@ -82,7 +82,9 @@ body {
 .carousel-section {
   position: relative;
   margin-top: 0.4rem;
-  width: 100%;
+  width: min(1320px, calc(100vw - 4.5rem));
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .carousel {
