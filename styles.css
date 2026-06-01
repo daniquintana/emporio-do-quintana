@@ -222,6 +222,15 @@ h3 {
   border: 1px solid rgba(127, 29, 29, 0.14);
 }
 
+.card-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
 .card strong {
   color: var(--wine);
   font-size: 1.1rem;
@@ -252,6 +261,15 @@ footer {
   text-align: center;
   padding: 1rem;
   color: #5d4a3a;
+}
+
+.about-image {
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  display: block;
 }
 
 @media (max-width: 720px) {
