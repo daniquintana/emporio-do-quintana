@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emporio do Quintana | Embutidos e Conservas Artesanais</title>
+    <title>Emporio do Quintana | Início</title>
     <meta
       name="description"
-      content="Linguiças artesanais, embutidos e conservas feitos em família. Faça seu pedido no Emporio do Quintana."
+      content="Embutidos artesanais e conservas da família Quintana. Conheça nossos produtos e faça seu pedido."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,74 +17,58 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="hero">
-      <p class="kicker">Feito em família, com receita de casa</p>
-      <h1>Emporio do Quintana</h1>
-      <p class="subtitle">
-        Embutidos artesanais e conservas selecionadas para quem valoriza sabor de verdade.
-      </p>
-      <a class="btn" href="#pedido">Fazer pedido</a>
+    <header class="topbar">
+      <a class="brand" href="index.html">Emporio do Quintana</a>
+      <nav class="nav-tabs" aria-label="Navegação principal">
+        <a class="active" href="index.html">Início</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
     </header>
 
-    <main>
-      <section class="section" id="sobre">
-        <h2>Nossa história</h2>
-        <p>
-          O Emporio do Quintana nasceu da cozinha da família: produção pequena, ingredientes escolhidos a dedo
-          e cuidado em cada etapa. Nosso foco é entregar sabor caseiro com qualidade e confiança.
-        </p>
-      </section>
+    <main class="home-main">
+      <section class="carousel-section" aria-label="Destaques do Emporio">
+        <div class="carousel" id="carousel">
+          <article class="slide active">
+            <div class="photo photo-1"></div>
+            <div class="overlay">
+              <p class="kicker">Sabores artesanais</p>
+              <h1>Receita de família em cada detalhe</h1>
+              <p>Produção cuidadosa, ingredientes selecionados e sabor de casa para sua mesa.</p>
+            </div>
+          </article>
+          <article class="slide">
+            <div class="photo photo-2"></div>
+            <div class="overlay">
+              <p class="kicker">Linha de embutidos</p>
+              <h2>Linguiças com tempero equilibrado</h2>
+              <p>Opções clássicas e apimentadas, perfeitas para churrasco e refeições especiais.</p>
+            </div>
+          </article>
+          <article class="slide">
+            <div class="photo photo-3"></div>
+            <div class="overlay">
+              <p class="kicker">Novidades</p>
+              <h2>Conservas caseiras chegando ao catálogo</h2>
+              <p>Mais variedade para acompanhar carnes, petiscos e momentos em família.</p>
+            </div>
+          </article>
+        </div>
 
-      <section class="section" id="catalogo">
-        <h2>Catálogo inicial</h2>
-        <p class="note">Valores de lançamento. Você pode ajustar depois sem complicação.</p>
-        <div class="grid">
-          <article class="card">
-            <h3>Linguiça Toscana Artesanal</h3>
-            <p>Pacote de 1kg, tempero caseiro.</p>
-            <strong>R$ 36,00</strong>
-          </article>
-          <article class="card">
-            <h3>Linguiça Apimentada</h3>
-            <p>Picância equilibrada, pacote de 1kg.</p>
-            <strong>R$ 39,00</strong>
-          </article>
-          <article class="card">
-            <h3>Linguiça de Frango</h3>
-            <p>Mais leve, suculenta, pacote de 1kg.</p>
-            <strong>R$ 34,00</strong>
-          </article>
-          <article class="card">
-            <h3>Conserva de Pimenta</h3>
-            <p>Pote artesanal, ideal para acompanhar carnes.</p>
-            <strong>R$ 22,00</strong>
-          </article>
+        <button class="carousel-btn prev" id="prevBtn" aria-label="Slide anterior">‹</button>
+        <button class="carousel-btn next" id="nextBtn" aria-label="Próximo slide">›</button>
+
+        <div class="dots" id="dots" aria-label="Indicadores do carrossel">
+          <button class="dot active" aria-label="Ir para slide 1"></button>
+          <button class="dot" aria-label="Ir para slide 2"></button>
+          <button class="dot" aria-label="Ir para slide 3"></button>
         </div>
       </section>
 
-      <section class="section" id="pedido">
-        <h2>Como pedir</h2>
-        <ol>
-          <li>Escolha os itens e quantidades.</li>
-          <li>Envie seu pedido por WhatsApp.</li>
-          <li>Combinamos retirada ou entrega na região.</li>
-        </ol>
-        <a
-          class="btn"
-          href="https://wa.me/5500000000000?text=Ola%21%20Quero%20fazer%20um%20pedido%20no%20Emporio%20do%20Quintana."
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Pedir no WhatsApp
-        </a>
-        <p class="note">Substitua o número acima pelo WhatsApp real do seu pai.</p>
-      </section>
-
-      <section class="section" id="contato">
-        <h2>Contato</h2>
-        <p><strong>Região de atendimento:</strong> Inserir cidade e bairros</p>
-        <p><strong>Email:</strong> contato@emporiodoquintana.com</p>
-        <p><strong>Instagram:</strong> @emporiodoquintana</p>
+      <section class="home-cta">
+        <a class="btn" href="catalogo.html">Ver catálogo</a>
+        <a class="btn btn-outline" href="contato.html">Fazer pedido</a>
       </section>
     </main>
 
@@ -92,8 +76,6 @@
       <p>© <span id="year"></span> Emporio do Quintana. Todos os direitos reservados.</p>
     </footer>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
