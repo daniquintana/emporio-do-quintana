@@ -37,10 +37,15 @@ body {
 }
 
 .brand {
-  font-family: "Bree Serif", serif;
-  font-size: 1.15rem;
-  color: var(--wood);
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand-logo {
+  height: 44px;
+  width: auto;
+  display: block;
 }
 
 .nav-tabs {
