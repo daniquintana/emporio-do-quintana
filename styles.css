@@ -1,7 +1,11 @@
 :root {
-  --bg: #f7f3ec;
-  --text: #2b2218;
-  --accent: #a33b20;
+  --cream: #f6efe3;
+  --paper: #fffaf0;
+  --wood: #5a3a26;
+  --wine: #7f1d1d;
+  --clay: #b45309;
+  --leaf: #3f5f45;
+  --text: #2b2118;
 }
 
 * {
@@ -10,33 +14,119 @@
 
 body {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Nunito", sans-serif;
   color: var(--text);
-  background: var(--bg);
-  line-height: 1.6;
+  background:
+    radial-gradient(circle at 10% 15%, #fff3db 0%, transparent 22%),
+    radial-gradient(circle at 90% 0%, #ffe8cc 0%, transparent 20%),
+    var(--cream);
 }
 
 .hero {
-  padding: 4rem 1.5rem 2rem;
   text-align: center;
-  background: linear-gradient(180deg, #f1e6d5 0%, #f7f3ec 100%);
+  padding: 4rem 1.2rem 3rem;
+  background: linear-gradient(165deg, #f2dfc2, #f9f0e2 50%, #f6efe3);
+  border-bottom: 2px solid rgba(90, 58, 38, 0.18);
+}
+
+.kicker {
+  display: inline-block;
+  margin: 0;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(63, 95, 69, 0.14);
+  color: var(--leaf);
+  font-weight: 800;
+  letter-spacing: 0.02em;
 }
 
 h1,
-h2 {
-  margin: 0 0 0.75rem;
+h2,
+h3 {
+  font-family: "Bree Serif", serif;
+  color: var(--wood);
 }
 
 h1 {
-  color: var(--accent);
+  margin: 1rem 0 0.5rem;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.subtitle {
+  max-width: 760px;
+  margin: 0 auto 1.4rem;
+  font-size: 1.1rem;
 }
 
 main {
-  max-width: 760px;
+  max-width: 980px;
   margin: 0 auto;
-  padding: 1rem 1.5rem 3rem;
+  padding: 1.4rem 1.2rem 2.5rem;
 }
 
-a {
-  color: var(--accent);
+.section {
+  margin: 1.2rem 0;
+  padding: 1.3rem;
+  background: var(--paper);
+  border: 1px solid rgba(90, 58, 38, 0.15);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(90, 58, 38, 0.08);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.9rem;
+}
+
+.card {
+  padding: 0.95rem;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid rgba(127, 29, 29, 0.14);
+}
+
+.card strong {
+  color: var(--wine);
+  font-size: 1.1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 0.7rem;
+  padding: 0.72rem 1.1rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--wine), #9f2929);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.btn:hover {
+  filter: brightness(1.05);
+}
+
+.note {
+  color: #705845;
+  font-size: 0.96rem;
+}
+
+ol {
+  padding-left: 1.1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #5d4a3a;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 3rem;
+  }
+
+  .section {
+    padding: 1rem;
+  }
 }

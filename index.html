@@ -3,26 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emporio do Quintana</title>
-    <meta name="description" content="Embutidos artesanais e conservas da familia Quintana." />
+    <title>Emporio do Quintana | Embutidos e Conservas Artesanais</title>
+    <meta
+      name="description"
+      content="Linguiças artesanais, embutidos e conservas feitos em família. Faça seu pedido no Emporio do Quintana."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="hero">
+      <p class="kicker">Feito em família, com receita de casa</p>
       <h1>Emporio do Quintana</h1>
-      <p>Sabores artesanais da nossa familia para a sua mesa.</p>
+      <p class="subtitle">
+        Embutidos artesanais e conservas selecionadas para quem valoriza sabor de verdade.
+      </p>
+      <a class="btn" href="#pedido">Fazer pedido</a>
     </header>
 
     <main>
-      <section>
-        <h2>Em breve</h2>
-        <p>Estamos preparando nosso catalogo de linguicas, embutidos e conservas.</p>
+      <section class="section" id="sobre">
+        <h2>Nossa história</h2>
+        <p>
+          O Emporio do Quintana nasceu da cozinha da família: produção pequena, ingredientes escolhidos a dedo
+          e cuidado em cada etapa. Nosso foco é entregar sabor caseiro com qualidade e confiança.
+        </p>
       </section>
 
-      <section>
+      <section class="section" id="catalogo">
+        <h2>Catálogo inicial</h2>
+        <p class="note">Valores de lançamento. Você pode ajustar depois sem complicação.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Linguiça Toscana Artesanal</h3>
+            <p>Pacote de 1kg, tempero caseiro.</p>
+            <strong>R$ 36,00</strong>
+          </article>
+          <article class="card">
+            <h3>Linguiça Apimentada</h3>
+            <p>Picância equilibrada, pacote de 1kg.</p>
+            <strong>R$ 39,00</strong>
+          </article>
+          <article class="card">
+            <h3>Linguiça de Frango</h3>
+            <p>Mais leve, suculenta, pacote de 1kg.</p>
+            <strong>R$ 34,00</strong>
+          </article>
+          <article class="card">
+            <h3>Conserva de Pimenta</h3>
+            <p>Pote artesanal, ideal para acompanhar carnes.</p>
+            <strong>R$ 22,00</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="pedido">
+        <h2>Como pedir</h2>
+        <ol>
+          <li>Escolha os itens e quantidades.</li>
+          <li>Envie seu pedido por WhatsApp.</li>
+          <li>Combinamos retirada ou entrega na região.</li>
+        </ol>
+        <a
+          class="btn"
+          href="https://wa.me/5500000000000?text=Ola%21%20Quero%20fazer%20um%20pedido%20no%20Emporio%20do%20Quintana."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Pedir no WhatsApp
+        </a>
+        <p class="note">Substitua o número acima pelo WhatsApp real do seu pai.</p>
+      </section>
+
+      <section class="section" id="contato">
         <h2>Contato</h2>
-        <p>Pedidos e informacoes: <a href="mailto:contato@exemplo.com">contato@exemplo.com</a></p>
+        <p><strong>Região de atendimento:</strong> Inserir cidade e bairros</p>
+        <p><strong>Email:</strong> contato@emporiodoquintana.com</p>
+        <p><strong>Instagram:</strong> @emporiodoquintana</p>
       </section>
     </main>
+
+    <footer>
+      <p>© <span id="year"></span> Emporio do Quintana. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
