@@ -67,7 +67,12 @@ body {
   border-color: rgba(90, 58, 38, 0.35);
 }
 
-.home-main,
+.home-main {
+  max-width: none;
+  margin: 0;
+  padding: 1rem 1.1rem 2rem;
+}
+
 .page-main {
   max-width: 1240px;
   margin: 0 auto;
@@ -77,9 +82,7 @@ body {
 .carousel-section {
   position: relative;
   margin-top: 0.4rem;
-  width: calc(100vw - 2.2rem);
-  margin-left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
 }
 
 .carousel {
