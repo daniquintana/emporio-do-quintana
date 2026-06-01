@@ -1,0 +1,42 @@
+:root {
+  --bg: #f7f3ec;
+  --text: #2b2218;
+  --accent: #a33b20;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.hero {
+  padding: 4rem 1.5rem 2rem;
+  text-align: center;
+  background: linear-gradient(180deg, #f1e6d5 0%, #f7f3ec 100%);
+}
+
+h1,
+h2 {
+  margin: 0 0 0.75rem;
+}
+
+h1 {
+  color: var(--accent);
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 3rem;
+}
+
+a {
+  color: var(--accent);
+}
