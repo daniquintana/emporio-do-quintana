@@ -281,6 +281,12 @@ footer {
   display: block;
 }
 
+.about-image-transparent {
+  object-fit: contain;
+  max-height: 420px;
+  background: transparent;
+}
+
 @media (max-width: 720px) {
   .carousel,
   .slide,
