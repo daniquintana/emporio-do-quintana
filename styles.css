@@ -107,19 +107,25 @@ body {
 .photo-1 {
   background-image:
     linear-gradient(130deg, rgba(25, 15, 10, 0.3), rgba(25, 15, 10, 0.15)),
-    url("assets/images/carrossel/slide-1.jpg");
+    url("assets/images/carrossel/Gemini_Generated_Image_e1ls1ke1ls1ke1ls.png");
 }
 
 .photo-2 {
   background-image:
     linear-gradient(130deg, rgba(25, 15, 10, 0.3), rgba(25, 15, 10, 0.15)),
-    url("assets/images/carrossel/slide-2.jpg");
+    url("assets/images/carrossel/Gemini_Generated_Image_ioz9z6ioz9z6ioz9.png");
 }
 
 .photo-3 {
   background-image:
     linear-gradient(130deg, rgba(25, 15, 10, 0.3), rgba(25, 15, 10, 0.15)),
-    url("assets/images/carrossel/slide-3.jpg");
+    url("assets/images/carrossel/Gemini_Generated_Image_mvff29mvff29mvff.png");
+}
+
+.photo-4 {
+  background-image:
+    linear-gradient(130deg, rgba(25, 15, 10, 0.3), rgba(25, 15, 10, 0.15)),
+    url("assets/images/carrossel/Gemini_Generated_Image_vpjoyrvpjoyrvpjo.png");
 }
 
 .overlay {
